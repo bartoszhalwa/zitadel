@@ -1,8 +1,6 @@
 {
 	"name": "zitadel",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "devcontainer",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"features": {
 		"ghcr.io/devcontainers/features/go:1": {
 			"version": "1.21"
@@ -10,10 +8,7 @@
 		"ghcr.io/devcontainers/features/node:1": {
 			"version": "18"
 		},
-		"ghcr.io/guiyomh/features/golangci-lint:0": {},
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
-		"ghcr.io/devcontainers/features/github-cli:1": {},
-		"ghcr.io/jungaretti/features/make:1": {}
+		"ghcr.io/guiyomh/features/golangci-lint:0": {}
 	},
 	"forwardPorts": [
 		3000,
